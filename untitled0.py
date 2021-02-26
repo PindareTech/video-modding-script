@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import requests
 from PIL import Image
-n=15
-im1 = Image.open(r'C:\Users\augu\.spyder-py3\frame5.png')
+n= #insert the number of frames in the reference 
+im1 = Image.open(r'insert the location of your test frame')
 im1.save(r'test.jpg')
 pic2="test.jpg"
 
@@ -13,7 +13,7 @@ def ai_run(pic1, pic2):
             'image1': open(pic1, 'rb'),
             'image2': open(pic2, 'rb'),
         },
-        headers={'api-key': '66f8d598-83cb-4e00-bf75-dd62827e5016'}
+        headers={'api-key': 'insert your own api key'}
     )
     dist=r.json()["output"]["distance"]
     print(dist)
