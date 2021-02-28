@@ -27,7 +27,7 @@ def initial_processing(iminit, low_val, max_val):
     converter = ImageEnhance.Contrast(img)
     print(low_val)
     print(max_val)
-    cont = (1/(max_val/low_val))*2.8
+    cont = (1/(max_val/low_val))*2.0
     img = converter.enhance(cont)
     array = np.array(img)
     ip.imsave('temp1.png', array)
